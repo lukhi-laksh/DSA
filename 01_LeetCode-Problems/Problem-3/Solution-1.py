@@ -8,7 +8,6 @@ class Solution(object):
         length = len(s)
         max_length = 0
         longest_substr = ""
-        temp = list()   
         for i in range(length):
             for j in range(i+1, length+1):
                 subString = s[i:j]
