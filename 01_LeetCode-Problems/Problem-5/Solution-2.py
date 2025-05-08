@@ -1,3 +1,7 @@
+"""
+Given a string s, return the longest palindromic substring in s.
+
+"""
 class Solution(object):
     def longestPalindrome(self, s):
         if len(s) <= 1:
@@ -17,3 +21,9 @@ class Solution(object):
 sol = Solution()
 s = "ac"
 print(sol.longestPalindrome(s)) 
+
+"""
+Time Complexity:  O(n³)
+Space Complexity: O(n)
+
+"""
