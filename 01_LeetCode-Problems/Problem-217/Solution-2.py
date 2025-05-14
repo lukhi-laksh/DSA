@@ -20,7 +20,7 @@ nums = [2, 3, 4, 6]
 print(sol.containsDuplicate(nums))
 
 """
-Time Complexity: O(n log n)
+Time Complexity:  O(n log n)
 Space Complexity: O(n)
 
 """
