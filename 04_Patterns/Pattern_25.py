@@ -8,7 +8,7 @@ for i in range(1, 22):  # i from 1 to 21
 
     k = m - 1
 
-    for j in range(1, 22):  # j from 1 to 21
+    for j in range(1, 22):
         if j >= 12 - m and j <= 10 + m:
             if j < 11:
                 print(f" {k % 10}", end="")
@@ -17,5 +17,5 @@ for i in range(1, 22):  # i from 1 to 21
                 print(f" {k % 10}", end="")
                 k -= 1
         else:
-            print("  ", end="")  # Two spaces for alignment
+            print("  ", end="")  
     print()
