@@ -5,3 +5,6 @@ class Solution(object):
                 return i
         return -1
 
+sol = Solution()
+nums = []
+print(sol.smallestIndex(nums))
