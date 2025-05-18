@@ -8,3 +8,9 @@ class Solution(object):
 sol = Solution()
 nums = []
 print(sol.smallestIndex(nums))
+
+"""
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+"""
