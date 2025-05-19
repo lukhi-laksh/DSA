@@ -1,24 +1,20 @@
+from collections import Counter
 from typing import List
 
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        sorted_nums = sorted(nums)
-        empty = [0] * (sorted_nums[-1] + 1)
-        if len(sorted_nums) == 1:
-            return nums
-        elif sorted_nums[1] < 0:
-            return -1
-        else:
-            for one in sorted_nums:
-                empty[one] += 1
-
-            top_k_indices = sorted(range(len(empty)), key=lambda i: empty[i], reverse=True)[:k]
-    
-            return top_k_indices
-
-
+        d = Counter(nums)
+        # Sort the dictionary by frequency in descending order
+        sorted_items = sorted(d.items(), key=lambda item: item[1], reverse=True)
         
+        # Extract the top k elements
+        l = []
+        for i in range(k):
+            l.append(sorted_items[i][0])
+        
+        return l
+    
 sol = Solution()
 nums = [-1, -1]
 k = 1
