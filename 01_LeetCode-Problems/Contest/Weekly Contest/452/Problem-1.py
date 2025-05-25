@@ -29,3 +29,9 @@ class Solution(object):
             length += 2
 
         return length
+
+"""
+Time Complexity: O(n)
+Space Complexity: O(k)
+
+"""
