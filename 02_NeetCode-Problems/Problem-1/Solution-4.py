@@ -5,18 +5,20 @@ Given an integer array nums, return true if any value appears more than once in 
 from typing import List
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-        nums.sort()
-        for i in range(1, len(nums)):
-            if nums[i] == nums[i - 1]:
+        empty = list()
+        for i in nums:
+            if i in empty:
                 return True
+            else:
+                empty.append(i)
         return False
-    
-num = [7, 1, 5, 4, 7, 2]
-solutions = Solution()
-print(solutions.hasDuplicate(num))
+
+sol = Solution()
+nums = [2, 3, 4, 4, 2]
+print(sol.hasDuplicate(nums))
 
 """
-Time Complexity: O(n log n)
-Space Complexity: O(1)
+Time Complexity: O(n)
+Space Complexity: O(n)
 
 """
