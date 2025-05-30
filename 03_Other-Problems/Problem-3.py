@@ -13,3 +13,4 @@ Sol = Solution()
 lists = [1, 2, 5, 6, 9]
 target = 15    
 print(Sol.twoSum(lists, target))
+0
