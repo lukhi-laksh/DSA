@@ -18,4 +18,3 @@ class Solution:
 sol = Solution()
 height = [1,7,2,5,4,7,3,6]
 print(sol.maxArea(height))
-height = [2, 2, 2]
