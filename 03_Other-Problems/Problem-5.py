@@ -22,7 +22,7 @@ class Solution(object):
                 if cell in empty:
                     return False
                 empty.append(cell)
-
+        # Matrix Check
         for i in range(0, 9, 3):
             for j in range(0, 9, 3):
                 empty = list()
