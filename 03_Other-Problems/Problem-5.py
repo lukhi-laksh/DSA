@@ -11,7 +11,8 @@ class Solution(object):
                 if child in empty:
                     return False
                 empty.append(child)
-        
+
+        # Column Check
         for col in range(9):
             empty = list()
             for row in range(9):
