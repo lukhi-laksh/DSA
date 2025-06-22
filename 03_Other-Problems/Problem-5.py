@@ -1,5 +1,6 @@
 class Solution(object):
     def isValidSudoku(self, board):
+        # Create empty list
         empty = list()
         for parent in board:
             empty = list()
