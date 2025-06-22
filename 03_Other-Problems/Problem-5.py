@@ -1,6 +1,7 @@
 class Solution(object):
     def isValidSudoku(self, board):
         # Create empty list
+        # Row check
         empty = list()
         for parent in board:
             empty = list()
@@ -10,7 +11,7 @@ class Solution(object):
                 if child in empty:
                     return False
                 empty.append(child)
-    
+        
         for col in range(9):
             empty = list()
             for row in range(9):
