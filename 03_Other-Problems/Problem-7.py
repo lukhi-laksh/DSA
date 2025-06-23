@@ -1,0 +1,15 @@
+class Solution(object):
+    def Isvalid(self, s):
+        stack = []
+        for i in range(len(s)):
+            if s[i] == '(' or s[i] == '{' or s[i] == "[":
+                stack.append(i)
+            else:
+                if not stack:
+                    return False
+                stack.pop()
+        return len(stack) == 0
+
+sol = Solution()
+s = "({)}"
+print(sol.Isvalid(s))
