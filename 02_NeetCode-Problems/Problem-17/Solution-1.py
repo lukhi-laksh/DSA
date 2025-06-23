@@ -23,4 +23,4 @@ class MinStack:
     def getMin(self) -> int:
         if self.min_stack:
             return self.min_stack[-1]
-        return None  # or raise exception
+        return None
