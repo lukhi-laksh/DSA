@@ -5,7 +5,7 @@ class MinStack:
 
     def push(self, val: int) -> None:
         self.stack.append(val)
-        # Push to min_stack if it's the first element or smaller than or equal to current min
+
         if not self.min_stack or val <= self.min_stack[-1]:
             self.min_stack.append(val)
 
