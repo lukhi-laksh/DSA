@@ -1,23 +1,30 @@
 stack = []
-stackmin = []
 
 def pushing(num):
     if len(stack) == 0:
-        stack.append(num)
-        stackmin.append(num)
-    else:
-        stack.append(num)
-        stackmin.append(min(num, stackmin[-1]))
+        stack.append((num * 100) + num)
 
+    else:
+        stack.append(num * 100 + min(stack[-1] % 100, num))
+        
 def poping():
     if len(stack) == 0:
         return -1
-    element = stack.pop()
-    stackmin.pop
-    return element
+    return stack.pop()
 
 def getMin():
-    if len(stackmin) == 0:
+    if len(stack) == 0:
         return -1
     else:
-        return stackmin[-1]
+        return stack[-1] % 100
+
+pushing(5)
+print(getMin())   # 5
+pushing(3)
+print(getMin())   # 3
+pushing(7)
+print(getMin())   # 3
+poping()
+print(getMin())   # 3
+poping()
+print(getMin())   # 5
