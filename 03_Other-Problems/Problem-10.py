@@ -1,5 +1,4 @@
 stack = []
-stackmin = []
 
 def pushing(num):
     if len(stack) == 0:
