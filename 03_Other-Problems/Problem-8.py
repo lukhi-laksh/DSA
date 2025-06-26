@@ -1,5 +1,6 @@
 class Solution(object):
     def Celibrity(self, Sarr):
+        # Create stack
         stack = []
         for i in range(len(Sarr)):
             stack.append(i)
