@@ -1,5 +1,7 @@
 class Solution(object):
     def Isvalid(self, s):
+
+        # Create Stack
         stack = []
         for i in range(len(s)):
             if s[i] == '(' or s[i] == '{' or s[i] == "[":
