@@ -32,6 +32,7 @@ class Solution(object):
             
 
 sol = Solution()
+# Create 2D Array
 Sarr = [
     [1, 1, 1], 
     [0, 0, 0],
