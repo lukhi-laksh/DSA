@@ -12,6 +12,7 @@ class Solution(object):
                 stack.pop()
         return len(stack) == 0
 
+# Create object
 sol = Solution()
 s = "({)}"
 print(sol.Isvalid(s))
