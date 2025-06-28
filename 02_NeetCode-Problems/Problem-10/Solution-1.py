@@ -8,3 +8,7 @@ class Solution(object):
                     check = min(check, board[k])
                 ans[i] = max(ans[i], check)    
         return ans
+
+sol = Solution()
+board = [10, 20, 15, 50, 10, 70, 30]
+print(sol.MaxOfMin(board))
