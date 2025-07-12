@@ -1,5 +1,6 @@
 # Declare String
 s = "ababc"
+# Create empty list
 count = list()
 for i in range(len(s)):
     arr = list()
