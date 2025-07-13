@@ -9,6 +9,7 @@ class Solution:
         for i in range(len(temperatures)):
                 while stack and temperatures[stack[-1]] < temperatures[i]:
                     ans[stack[-1]] = i - stack[-1]
+                    # pop last element of stack
                     stack.pop()
                 stack.append(i)
         return ans
