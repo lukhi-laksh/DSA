@@ -4,6 +4,7 @@ class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         # Define 0
         ans = [0] * len(temperatures)
+        # Creating Stack
         stack = []
         for i in range(len(temperatures)):
                 while stack and temperatures[stack[-1]] < temperatures[i]:
