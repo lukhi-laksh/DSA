@@ -2,6 +2,7 @@ class Solution(object):
     def MaxOfMin(self, board):
         # Create array of 0 value
         ans = [0] * len(board)
+        # Outer Loop
         for i in range(len(board)):
             for j in range(len(board) - i):
                 check = 2**31 - 1
