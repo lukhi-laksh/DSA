@@ -4,6 +4,7 @@ class Solution(object):
         ans = [0] * len(board)
         # Outer Loop
         for i in range(len(board)):
+            # Inner Loop
             for j in range(len(board) - i):
                 check = 2**31 - 1
                 for k in range(j, j + i + 1):
