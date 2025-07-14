@@ -10,6 +10,7 @@ class Solution(object):
                 for k in range(j, j + i + 1):
                     check = min(check, board[k])
                 ans[i] = max(ans[i], check)    
+        # Return final answer
         return ans
 
 sol = Solution()
