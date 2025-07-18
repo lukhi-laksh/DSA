@@ -15,6 +15,18 @@ class Solution:
             return True
         
         
+        def columns(board: List[List[str]]) -> bool:
+            for col in range(9):
+                final = set()
+                for row in range(9):
+                    cell = board[row][col]
+                    if cell == '.':
+                        continue
+                    if cell in final:
+                        return False
+                    final.add(cell)
+            return True
+        
 
         
 
