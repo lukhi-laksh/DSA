@@ -27,7 +27,23 @@ class Solution:
                     final.add(cell)
             return True
         
+        def box(board: List[List[str]]) -> bool:
+            for col in range(0, 9, 3):
+                for row in range(0, 9, 3):
+                    final = set()
+                    for i in range(3):
+                        for j in range(3):
+                            temp = board[row + i][col + j]
+                            if temp == '.':
+                                continue
+                            if temp in final:
+                                return False
+                            final.add(temp)
+            return True
 
+                        
+        
+        return row(board) and columns(board) and box(board)
         
 
 sol = Solution()
