@@ -1,9 +1,6 @@
 class Solution(object):
     def removeSubfolders(self, folder):
-        """
-        :type folder: List[str]
-        :rtype: List[str]
-        """
+
         folder.sort()  # sort lexicographically
         res = []
         for dir in folder:
