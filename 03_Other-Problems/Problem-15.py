@@ -15,7 +15,7 @@ class Solution:
                     final.add(child)
             return True
         
-        
+        # Check columns
         def columns(board: List[List[str]]) -> bool:
             for col in range(9):
                 final = set()
