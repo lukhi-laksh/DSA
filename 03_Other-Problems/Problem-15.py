@@ -1,5 +1,6 @@
 from typing import List
 
+# main class
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         def row(board):
