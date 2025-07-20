@@ -3,6 +3,7 @@ from typing import List
 # main class
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
+        # Row check
         def row(board):
             for parent in board:
                 final = set()
@@ -28,7 +29,7 @@ class Solution:
                     final.add(cell)
             return True
         
-        # Row check
+        # matrix check
         def box(board: List[List[str]]) -> bool:
             for col in range(0, 9, 3):
                 for row in range(0, 9, 3):
