@@ -28,6 +28,7 @@ class Solution:
                     final.add(cell)
             return True
         
+        # Row check
         def box(board: List[List[str]]) -> bool:
             for col in range(0, 9, 3):
                 for row in range(0, 9, 3):
