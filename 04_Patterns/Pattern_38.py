@@ -5,7 +5,8 @@ for i in range(1, 5):
             print(p, end="  ")
             if j < 4:
                 p = p + 1
-
+            else:
+                p = p - 1
         else:
             print(" ", end="  ")
     print("")
