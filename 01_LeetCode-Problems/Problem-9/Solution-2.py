@@ -8,3 +8,9 @@ class Solution(object):
         y = list(str(x))
             
         z = y[::-1]
+        return y==z
+
+sol = Solution()
+x = -1221
+print(sol.isPalindrome(x))
+
