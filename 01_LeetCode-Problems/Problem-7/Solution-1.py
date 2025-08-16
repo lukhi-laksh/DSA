@@ -1,0 +1,32 @@
+"""
+Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+"""
+class Solution(object):
+    def reverse(self, x):
+        if x < 0:
+            sign = -1
+        else:
+            sign = 1
+        x = abs(x)
+        ans = 0
+        while x != 0:
+            temp = x % 10
+            x = x // 10
+            ans = (ans * 10) + temp
+        
+        ans = ans * sign
+
+        if ans < -2**31 or ans > 2**31 - 1:
+            return 0
+        return ans
+            
+
+sol = Solution()
+x = -2550
+print(sol.reverse(x))
+
+"""
+Time Complexity:  O(n)
+Space Complexity: O(1)
+
+"""
