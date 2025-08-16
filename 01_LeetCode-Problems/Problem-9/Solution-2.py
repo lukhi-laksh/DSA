@@ -14,3 +14,8 @@ sol = Solution()
 x = -1221
 print(sol.isPalindrome(x))
 
+"""
+Time Complexity:  O(n)
+Space Complexity: O(n)
+
+"""
