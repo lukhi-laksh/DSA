@@ -14,19 +14,3 @@ class Solution(object):
             x = x // 10
             ans = (ans * 10) + temp
         
-        ans = ans * sign
-
-        if ans < -2**31 or ans > 2**31 - 1:
-            return 0
-        return ans
-            
-
-sol = Solution()
-x = -2550
-print(sol.reverse(x))
-
-"""
-Time Complexity:  O(n)
-Space Complexity: O(1)
-
-"""
