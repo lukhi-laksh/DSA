@@ -14,3 +14,5 @@ class Solution(object):
             x = x // 10
             ans = (ans * 10) + temp
         
+        ans = ans * sign
+
