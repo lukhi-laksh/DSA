@@ -16,3 +16,8 @@ class Solution(object):
         
         ans = ans * sign
 
+        if ans < -2**31 or ans > 2**31 - 1:
+            return 0
+
+            
+
