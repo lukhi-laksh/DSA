@@ -21,7 +21,7 @@ class Solution(object):
             60: 'LX',
             70: 'LXX',
             80: 'LXXX', 
-            90: 'LC',
+            90: 'XC',
             100: 'C',
             200: 'CC',
             300: 'CCC',
@@ -30,16 +30,28 @@ class Solution(object):
             600: 'DC',
             700: 'DCC',
             800: 'DCCC',
-            900: 'DM',
+            900: 'CM',
             1000: 'M',
             2000: 'MM',
             3000: 'MMM'
         }
+
+        if num == 0:
+            return ""
+
         nums = str(num)
-        new = int(nums[0] + '0' * (len(nums) - 1))
-        
-        
+        first_val = int(nums[0] + '0' * (len(nums) - 1))
+
+        rest_val = int(nums[1:]) if len(nums) > 1 else 0
+
+        return dictt[first_val] + self.intToRoman(rest_val)
+
 
 sol = Solution()
-num = 2335
-print(sol.intToRoman(num))
+print(sol.intToRoman(3566))
+
+"""
+Time Complexity:  O(d) = O(log n)
+Space Complexity: O(d) = O(log n)
+
+"""
