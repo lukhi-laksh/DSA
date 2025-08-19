@@ -35,3 +35,10 @@ class Solution(object):
             2000: 'MM',
             3000: 'MMM'
         }
+        
+        
+        
+
+sol = Solution()
+num = 2335
+print(sol.intToRoman(num))
