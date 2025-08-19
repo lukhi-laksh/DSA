@@ -35,7 +35,8 @@ class Solution(object):
             2000: 'MM',
             3000: 'MMM'
         }
-        
+        nums = str(num)
+        new = int(nums[0] + '0' * (len(nums) - 1))
         
         
 
