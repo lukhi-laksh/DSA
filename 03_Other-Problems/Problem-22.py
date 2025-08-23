@@ -12,6 +12,7 @@ class solution():
                 while start < end:
                     sum = nums[i] + nums[j] + nums[start] + nums[end]
 
+                    # Check sum with target
                     if sum == target:
                         ans.add((nums[i], nums[j], nums[start], nums[end]))
                         start += 1
