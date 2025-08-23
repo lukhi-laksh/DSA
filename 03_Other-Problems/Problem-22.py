@@ -7,7 +7,8 @@ class solution():
             for j in range(i + 1, n - 2):
                 start = j + 1
                 end = n - 1
-                
+
+                # Binary search
                 while start < end:
                     sum = nums[i] + nums[j] + nums[start] + nums[end]
 
