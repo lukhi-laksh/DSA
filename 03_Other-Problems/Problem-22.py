@@ -21,6 +21,8 @@ class solution():
                         start += 1
                     else:
                         end -= 1
+
+        # return Converted sets to list
         return [list(t) for t in ans]
 
 sol = solution()
