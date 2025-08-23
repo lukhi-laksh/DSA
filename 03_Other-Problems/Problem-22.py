@@ -2,7 +2,7 @@ class solution():
     def FourSum(self, nums, target):
         n = len(nums)
         ans = set()
-
+        # Takes two values one by one
         for i in range(n - 3):
             for j in range(i + 1, n - 2):
                 start = j + 1
