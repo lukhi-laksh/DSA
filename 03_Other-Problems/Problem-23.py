@@ -15,6 +15,12 @@ def laksh(arr, start, end):
                 right += 1
             index += 1
 
+        # left side merge
+        while left <= mid:
+            temp[index] = arr[left]
+            left += 1
+            index += 1
+
 
 
 
