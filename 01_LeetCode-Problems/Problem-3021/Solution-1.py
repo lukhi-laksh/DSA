@@ -1,3 +1,7 @@
+"""
+Alice and Bob Playing Flower Game
+
+"""
 class Solution(object):
     def flowerGame(self, n, m):
         """
@@ -15,3 +19,9 @@ class Solution(object):
     
 sol = Solution()
 print(sol.flowerGame(2, 3))
+    
+"""
+Time Complexity:  O(n)
+Space Complexity: O(n)
+
+"""
