@@ -11,6 +11,7 @@ def pushing(num):
         stack.append(num)
         stackmin.append(min(num, stackmin[-1]))
 
+# python pop function
 def poping():
     if len(stack) == 0:
         return -1
