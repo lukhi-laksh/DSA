@@ -19,6 +19,7 @@ def poping():
     stackmin.pop
     return element
 
+# return arrays last index
 def getMin():
     if len(stackmin) == 0:
         return -1
