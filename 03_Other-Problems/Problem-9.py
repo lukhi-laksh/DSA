@@ -2,6 +2,7 @@
 stack = []
 stackmin = []
 
+# python append() custom function
 def pushing(num):
     if len(stack) == 0:
         stack.append(num)
