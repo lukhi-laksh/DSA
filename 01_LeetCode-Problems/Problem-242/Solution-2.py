@@ -10,6 +10,7 @@ class Solution(object):
     
 sol =  Solution()
 print(sol.isAnagram('laksh', 'shkal'))
+
 """
 Time Complexity:  O(n log n)
 Space Complexity: O(n)
