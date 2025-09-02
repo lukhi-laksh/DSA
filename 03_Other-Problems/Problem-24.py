@@ -1,5 +1,6 @@
 stack = []
 
+# Custome Append
 def pushing(num):
     if len(stack) == 0:
         stack.append((num * 100) + num)
