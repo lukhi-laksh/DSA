@@ -14,6 +14,7 @@ def poping():
         return -1
     return stack.pop()
 
+# return fast index 
 def getMin():
     if len(stack) == 0:
         return -1
