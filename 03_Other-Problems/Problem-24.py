@@ -7,7 +7,8 @@ def pushing(num):
 
     else:
         stack.append(num * 100 + min(stack[-1] % 100, num))
-        
+
+# Custom pop last index
 def poping():
     if len(stack) == 0:
         return -1
