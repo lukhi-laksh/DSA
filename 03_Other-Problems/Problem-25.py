@@ -21,3 +21,13 @@ class Solution(object):
                     right -= 1
        
         return [list(t) for t in ans]
+
+sol = Solution()
+nums = [-1, 0, 1, 2, -1, -4]
+print(sol.threeSum(nums))
+
+"""
+Time Complexity:  O(n²)
+Space Complexity: O(n²)
+
+"""
