@@ -9,3 +9,6 @@ class Solution(object):
                     return ops
         
         return -1
+
+sol = Solution()
+print(sol.makeTheIntegerZero(10, 25))
