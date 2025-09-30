@@ -17,6 +17,6 @@ print(sol.triangularSum([1, 2, 3, 4, 5]))
 
 """
 Time Complexity:  O(n²)
-Space Complexity: O(n²)
+Space Complexity: O(n)
 
 """
