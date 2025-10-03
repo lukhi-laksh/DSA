@@ -18,6 +18,9 @@ class Solution():
                 right -= 1
                 
         return water
+    
+sol = Solution()
+print(sol.trap([2, 3, 4, 2, 3, 6, 7, 5, 3]))
 
 
 """
