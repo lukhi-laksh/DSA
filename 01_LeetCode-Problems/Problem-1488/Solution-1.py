@@ -32,3 +32,8 @@ class Solution:
 sol = Solution()
 print(sol.avoidFlood([1,2,3,4]))
 
+"""
+Time Complexity:  O(n²)
+Space Complexity: O(n)
+
+"""
