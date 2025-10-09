@@ -32,3 +32,8 @@ class Solution(object):
         return prev_s  + mana[-1]*so_far
 
 
+"""
+Time Complexity:  O(n²)
+Space Complexity: O(n)
+
+"""
