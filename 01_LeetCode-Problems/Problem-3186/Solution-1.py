@@ -1,5 +1,5 @@
 """
-Maximum Total Damage With spell casting
+Maximum Total Damage With Spell Casting
 
 """
 
@@ -16,14 +16,11 @@ class Solution:
         dp = [0] * n
         
         for i in range(n):
-            # profit if we take current spell group
             include = total[i]
-            # find last non-conflicting spell (nums[j] < nums[i] - 2)
             j = bisect_right(nums, nums[i] - 3) - 1
             if j >= 0:
                 include += dp[j]
             
-            # profit if we skip this one
             exclude = dp[i-1] if i > 0 else 0
             
             dp[i] = max(include, exclude)
