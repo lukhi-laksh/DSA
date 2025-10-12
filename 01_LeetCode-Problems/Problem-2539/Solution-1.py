@@ -31,3 +31,10 @@ class Solution(object):
             d[key] = res
             return res
         return f(m, k, 0, 0)
+    
+    
+"""
+Time Complexity:  O(n²)
+Space Complexity: O(n)
+
+"""
