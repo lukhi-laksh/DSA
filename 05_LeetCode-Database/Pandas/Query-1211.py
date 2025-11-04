@@ -1,3 +1,5 @@
+import pandas as pd
+
 def queries_stats(queries: pd.DataFrame) -> pd.DataFrame:
     queries['quality'] = queries['rating'] / queries['position'] + 1e-10
     queries['poor_query_percentage'] = (queries['rating'] < 3).astype(int)
