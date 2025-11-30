@@ -1,0 +1,5 @@
+import pandas as pd
+
+def find_valid_serial_products(products: pd.DataFrame) -> pd.DataFrame:
+    pattern = r'( |^)SN[0-9]{4}-[0-9]{4}( |$)'
+    return products[products['description'].str.contains(pattern, na=False)]
