@@ -1,0 +1,27 @@
+"""
+Number of ways to Devide a Long Corridor
+
+"""
+
+class Solution(object):
+    def numberOfWays(self, corridor):
+        l = []
+        c = 0
+        n = len(corridor)
+        for i in range(n):
+            if corridor[i]=="S":
+                l.append(i)
+                c+=1
+        if c%2 or c==0:
+            return 0
+        ans = 1
+        for i in range(2,c,2):
+            ans*=l[i]-l[i-1]
+            ans%=1000000007
+        return ans
+    
+"""
+Time Complexity:  O(n)
+Space Complexity: O(n)
+
+"""
