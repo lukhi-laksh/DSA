@@ -19,56 +19,56 @@ The repository is structured in a **clean, problem-number–wise format**, makin
 
 ---
 
-## 🗂️ Repository Structure (Overview)
+### 📂 Repository Structure
 
-DSA
-├── 01_LeetCode-Problems
-│   ├── Contest
-│   │   ├── Image
-│   │   └── Weekly Contest
-│   │       ├── 451
-│   │       ├── 452
-│   │       └── 465
-│   │           ├── Problem-1.py
-│   │           └── Problem-2.py
-│   │
-│   ├── Problem-1
-│   │   ├── Solution-1.py
-│   │   └── Solution-2.py
-│   ├── Problem-2
-│   │   └── Solution-1.py
-│   ├── ...
-│   └── Problem-N
-│
-├── 02_NeetCode-Problems
-│   ├── Problem-1
-│   │   ├── Solution-1.py
-│   │   ├── Solution-2.py
-│   │   └── Solution-3.py
-│   ├── Problem-2
-│   │   └── Solution-1.py
-│   ├── ...
-│   └── Problem-N
-│
-├── 03_Other-Problems
-│   ├── Problem-1.py
-│   ├── Problem-2.py
-│   ├── ...
-│   └── Problem-N.py
-│
-├── 04_Patterns
-│   ├── Pattern_1.py
-│   ├── Pattern_2.py
-│   ├── ...
-│   └── Pattern_N.py
-│
-└── 05_LeetCode-Database
-    └── Pandas
-        ├── Query-175.py
-        ├── Query-176.py
-        ├── ...
-        └── Query-N.py
+- **DSA**
+  - **01_LeetCode-Problems**
+    - **Contest**
+      - Image
+      - Weekly Contest
+        - 451
+          - Problem-1.py
+        - 452
+          - Problem-1.py
+        - 465
+          - Problem-1.py
+          - Problem-2.py
+    - **Problem-1**
+      - Solution-1.py
+      - Solution-2.py
+    - **Problem-2**
+      - Solution-1.py
+    - ...
+    - **Problem-N**
 
+  - **02_NeetCode-Problems**
+    - **Problem-1**
+      - Solution-1.py
+      - Solution-2.py
+      - Solution-3.py
+    - **Problem-2**
+      - Solution-1.py
+    - ...
+    - **Problem-N**
+
+  - **03_Other-Problems**
+    - Problem-1.py
+    - Problem-2.py
+    - ...
+    - Problem-N.py
+
+  - **04_Patterns**
+    - Pattern_1.py
+    - Pattern_2.py
+    - ...
+    - Pattern_N.py
+
+  - **05_LeetCode-Database**
+    - **Pandas**
+      - Query-175.py
+      - Query-176.py
+      - ...
+      - Query-N.py
 
 ---
 
