@@ -46,3 +46,9 @@ class Solution(object):
             return False
 
         return build(bottom)
+
+"""
+Time Complexity: O(2ⁿ)
+Space Complexity: O(2ⁿ)
+
+"""
