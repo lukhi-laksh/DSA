@@ -1,0 +1,17 @@
+"""
+Find the Index of First Occurence in a String
+
+"""
+
+class Solution(object):
+    def strStr(self, haystack, needle):
+        for i in range(len(haystack) - len(needle) + 1):
+            if haystack[i : i+len(needle)] == needle:
+                return i
+        return -1
+
+"""
+Time Complexity: O(n log n)
+Space Complexity: O(1)
+
+"""
