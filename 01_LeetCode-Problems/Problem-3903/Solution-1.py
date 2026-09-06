@@ -22,6 +22,7 @@ class Solution(object):
                 return i
         return -1
 
+
 """
 Time Complexity: O(n)
 Space Complexity: O(1)
