@@ -1,3 +1,6 @@
+"""
+Valid Parentheses String
+"""
 class Solution(object):
     def checkValidString(self, s):
 
@@ -18,3 +21,9 @@ class Solution(object):
             low = max(low, 0)
         return low == 0
 __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("000"))
+
+"""
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+"""
