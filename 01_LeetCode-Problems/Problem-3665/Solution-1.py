@@ -8,8 +8,7 @@ class Solution(object):
         dp[0][0] = 1
         
         def resolve(i, j, direction):
-            # direction: 0 = right, 1 = down
-            # Returns the final free cell after chain of reflections, or None if out of bounds / cycle
+
             seen = set()
             while 0 <= i < m and 0 <= j < n:
                 state = (i, j, direction)
@@ -18,11 +17,10 @@ class Solution(object):
                 seen.add(state)
                 if grid[i][j] == 0:
                     return (i, j)
-                # Mirror: reflect
-                if direction == 0:  # entered while going right -> turn down
+                if direction == 0:
                     i += 1
                     direction = 1
-                else:  # entered while going down -> turn right
+                else:
                     j += 1
                     direction = 0
             return None
@@ -31,13 +29,11 @@ class Solution(object):
             for j in range(n):
                 if grid[i][j] == 1 or dp[i][j] == 0:
                     continue
-                # Try moving right
                 if j + 1 < n:
                     land = resolve(i, j + 1, 0)
                     if land:
                         x, y = land
                         dp[x][y] = (dp[x][y] + dp[i][j]) % MOD
-                # Try moving down
                 if i + 1 < m:
                     land = resolve(i + 1, j, 1)
                     if land:
