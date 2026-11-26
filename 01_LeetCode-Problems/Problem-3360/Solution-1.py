@@ -1,0 +1,19 @@
+"""
+Stone Removel Game
+
+"""
+class Solution(object):
+    def canAliceWin(self, n):
+        stones = 10
+        alice_turn = True
+        while n >= stones:
+            n -= stones
+            stones -= 1
+            alice_turn = not alice_turn
+        return not alice_turn
+
+"""
+Time Complexity: O(1)
+Space Complexity: O(1)
+
+"""
